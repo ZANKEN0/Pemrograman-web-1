@@ -1,0 +1,89 @@
+<!-- =====================
+FILE: temukan.html (HALAMAN TEMUKAN KAMI)
+Tailwind CSS CDN
+===================== -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temukan Kami | Salad Buah Fresh</title>
+    <link rel="icon" href="img/icon-removebg-preview.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-green-600 text-white z-50">
+      <div class="max-w-7xl mx-auto flex justify-center items-center h-14">
+        <ul class="flex space-x-8 font-semibold" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="temukan.html">Temukan Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-24 pb-16 bg-gradient-to-br from-green-50 via-green-100 to-green-200 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Temukan Kami</h1>
+      <p class="text-gray-700 max-w-2xl mx-auto mb-3">Kami selalu dekat dengan Anda untuk menghadirkan salad buah segar setiap hari.</p>
+      <p class="text-gray-600 max-w-3xl mx-auto">Silakan kunjungi lokasi kami secara langsung, pesan melalui layanan pengantaran, atau hubungi kami lewat media sosial resmi untuk informasi terbaru dan promo menarik.</p>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <!-- MAP -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <iframe src="https://www.google.com/maps?q=Jakarta&output=embed" class="w-full h-96 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+        </div>
+
+        <!-- INFO & SOSIAL MEDIA -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h2 class="text-2xl font-bold mb-6">Lokasi & Sosial Media</h2>
+
+          <div class="space-y-4 text-gray-700">
+            <p>📍 <strong>Alamat:</strong> Jl. Juanda No. 123, Jakarta</p>
+            <p>🛵 <strong>Area Pengantaran:</strong> Jakarta & sekitarnya</p>
+            <p>⏰ <strong>Jam Operasional:</strong> 08.00 – 20.00</p>
+          </div>
+
+          <hr class="my-6" />
+
+          <div class="space-y-4">
+            <a href="https://wa.me/62895614581236" target="_blank" class="block bg-green-600 text-white text-center py-3 rounded-xl font-semibold hover:bg-green-700 transition">WhatsApp</a>
+            <a href="https://www.instagram.com" target="_blank" class="block bg-pink-500 text-white text-center py-3 rounded-xl font-semibold hover:bg-pink-600 transition">Instagram</a>
+            <a href="https://www.facebook.com" target="_blank" class="block bg-blue-600 text-white text-center py-3 rounded-xl font-semibold hover:bg-blue-700 transition">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-600 text-white text-center py-4">
+      <p>&copy; 2025 Salad Buah Fresh</p>
+    </footer>
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+
+      document.querySelectorAll("#navbar-menu a").forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("text-green-200");
+        } else {
+          link.classList.remove("text-green-200");
+        }
+      });
+    </script>
+  </body>
+</html>

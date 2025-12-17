@@ -1,0 +1,102 @@
+<!-- =====================
+FILE: contact.html (HALAMAN KONTAK)
+Tailwind CSS CDN
+===================== -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | Salad Buah Fresh</title>
+    <link rel="icon" href="img/icon-removebg-preview.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-green-600 text-white z-50">
+      <div class="max-w-7xl mx-auto flex justify-center items-center h-14">
+        <ul class="flex space-x-8 font-semibold" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="temukan.html">Temukan Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-24 pb-16 bg-gradient-to-br from-green-50 via-green-100 to-green-200 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hubungi Kami</h1>
+      <p class="text-gray-700 max-w-2xl mx-auto">Kami siap membantu Anda. Silakan hubungi kami melalui informasi di bawah ini atau kirim pesan langsung.</p>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <!-- INFO KONTAK -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h2 class="text-2xl font-bold mb-6">Informasi Kontak</h2>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-center gap-3">📍 <span>Jl. Contoh Alamat No. 123, Kota Anda</span></li>
+            <li class="flex items-center gap-3">📞 <span>+62 8xx-xxxx-xxxx</span></li>
+            <li class="flex items-center gap-3">📧 <span>saladbuahfresh@email.com</span></li>
+            <li class="flex items-center gap-3">⏰ <span>Buka setiap hari 08.00 - 20.00</span></li>
+          </ul>
+
+          <div class="mt-8">
+            <a href="https://wa.me/62895614581236" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition"> Chat via WhatsApp </a>
+          </div>
+        </div>
+
+        <!-- FORM KONTAK -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h2 class="text-2xl font-bold mb-6">Kirim Pesan</h2>
+          <form onsubmit="kirimPesan(); return false;" class="space-y-4">
+            <input id="nama" type="text" placeholder="Nama" required class="w-full px-4 py-2 border rounded-xl" />
+            <input id="email" type="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-xl" />
+            <textarea id="pesan" placeholder="Pesan" rows="5" required class="w-full px-4 py-2 border rounded-xl"></textarea>
+            <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-600 text-white text-center py-4">
+      <p>&copy; 2025 Salad Buah Fresh</p>
+    </footer>
+
+    <script>
+      function kirimPesan() {
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        const text = `Halo, saya ${nama}%0AEmail: ${email}%0APesan: ${pesan}`;
+        const noWA = "628xxxxxxxxxx"; // GANTI NOMOR WA
+
+        window.open(`https://wa.me/${noWA}?text=${text}`, "_blank");
+      }
+
+      const currentPage = window.location.pathname.split("/").pop();
+
+      document.querySelectorAll("#navbar-menu a").forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("text-green-200");
+        } else {
+          link.classList.remove("text-green-200");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!-- =====================
+FILE: aboutUs.html (HALAMAN ABOUT US)
+Tailwind CSS CDN
+FOCUS: STRONG TITLE BACKGROUND
+===================== -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Salad Buah Fresh</title>
+    <link rel="icon" href="img/icon-removebg-preview.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-green-600 text-white z-50">
+      <div class="max-w-7xl mx-auto flex justify-center items-center h-14">
+        <ul class="flex space-x-8 font-semibold" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html" class="text-green-200">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="temukan.html">Temukan Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO TITLE STRONG -->
+    <header class="pt-28 pb-32 relative overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-green-600 via-green-500 to-green-400"></div>
+
+      <!-- Decorative shapes -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full"></div>
+      <div class="absolute bottom-0 -right-24 w-[28rem] h-[28rem] bg-white/10 rounded-full"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Tentang Salad Buah Fresh</h1>
+        <p class="text-green-100 text-lg md:text-xl leading-relaxed">Kami percaya bahwa hidup sehat dimulai dari pilihan makanan yang tepat. Salad Buah Fresh hadir untuk menemani gaya hidup sehat Anda setiap hari.</p>
+      </div>
+    </header>
+
+    <!-- TIMELINE SECTION -->
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Perjalanan Kami dari Waktu ke Waktu</h2>
+
+        <div class="relative border-l-4 border-green-500 pl-10 space-y-16">
+          <!-- 2022 -->
+          <div class="relative">
+            <span class="absolute -left-5 top-1 w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full font-bold">2022</span>
+            <h3 class="text-2xl font-bold mb-2 ml-10">Awal Berdiri</h3>
+            <p class="text-gray-700 max-w-3xlc ml-10">
+              Salad Buah Fresh dimulai dari usaha rumahan sederhana. Berangkat dari kepedulian akan pola hidup sehat, kami mulai meracik salad buah dengan bahan segar untuk keluarga dan lingkungan sekitar.
+            </p>
+          </div>
+
+          <!-- 2023 -->
+          <div class="relative">
+            <span class="absolute -left-5 top-1 w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full font-bold">2023</span>
+            <h3 class="text-2xl font-bold mb-2 ml-10">Kepercayaan Pelanggan</h3>
+            <p class="text-gray-700 max-w-3xl ml-10">Permintaan meningkat berkat kepercayaan pelanggan. Kami mulai memperluas varian rasa, meningkatkan standar kebersihan, dan melayani pemesanan dalam jumlah lebih besar.</p>
+          </div>
+
+          <!-- 2024 -->
+          <div class="relative">
+            <span class="absolute -left-5 top-1 w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full font-bold">2024</span>
+            <h3 class="text-2xl font-bold mb-2 ml-10">Pengembangan & Inovasi</h3>
+            <p class="text-gray-700 max-w-3xl ml-10">Kami menghadirkan inovasi baru seperti saus yogurt sehat, kemasan ramah lingkungan, serta layanan pemesanan online untuk memudahkan pelanggan.</p>
+          </div>
+
+          <!-- 2025 -->
+          <div class="relative">
+            <span class="absolute -left-5 top-1 w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full font-bold">2025</span>
+            <h3 class="text-2xl font-bold mb-2 ml-10">Saat Ini & Ke Depan</h3>
+            <p class="text-gray-700 max-w-3xl ml-10">Hingga saat ini, Salad Buah Fresh terus berkembang dengan fokus pada kualitas, kepuasan pelanggan, dan visi menjadi brand camilan sehat terpercaya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY & VIDEO SECTION -->
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Di Balik Layar Salad Buah Fresh</h2>
+        <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">Setiap salad dibuat dengan penuh perhatian, mulai dari pemilihan buah hingga proses pengemasan.</p>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Video -->
+          <div class="w-64 h-90 rounded-3xl overflow-hidden shadow-2xl relative">
+            <video class="w-full h-full object-cover" autoplay muted loop>
+              <source src="img/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <!-- Gallery -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <img src="img/buahSegar.png" class="rounded-2xl shadow-lg w-full h-48 object-cover" alt="Buah Segar" />
+              <h3 class="text-center font-bold text-gray-700">Bahan Segar Pilihan</h3>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <img src="img/persiapan.png" class="rounded-2xl shadow-lg w-full h-48 object-cover" alt="Proses Persiapan" />
+              <h3 class="text-center font-bold text-gray-700">Proses Higienis</h3>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <img src="img/pengemasan.png" class="rounded-2xl shadow-lg w-full h-48 object-cover" alt="Pengemasan" />
+              <h3 class="text-center font-bold text-gray-700">Pengemasan Rapih</h3>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <img src="img/sajikan.png" class="rounded-2xl shadow-lg w-full h-48 object-cover" alt="Siap Disajikan" />
+              <h3 class="text-center font-bold text-green-600">Siap Dinikmati</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-14">Nilai yang Kami Pegang</h2>
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+          <div class="bg-white p-10 rounded-3xl shadow-xl">
+            <div class="text-5xl mb-4">🍓</div>
+            <h3 class="text-xl font-bold mb-3">Kesegaran</h3>
+            <p class="text-gray-600">Buah segar pilihan diproses setiap hari.</p>
+          </div>
+          <div class="bg-white p-10 rounded-3xl shadow-xl">
+            <div class="text-5xl mb-4">🧼</div>
+            <h3 class="text-xl font-bold mb-3">Kebersihan</h3>
+            <p class="text-gray-600">Standar higienis tinggi dalam setiap proses.</p>
+          </div>
+          <div class="bg-white p-10 rounded-3xl shadow-xl">
+            <div class="text-5xl mb-4">💚</div>
+            <h3 class="text-xl font-bold mb-3">Kepercayaan</h3>
+            <p class="text-gray-600">Kepuasan pelanggan adalah prioritas utama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Tim di Balik Salad Buah Fresh</h2>
+        <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">Kami adalah tim kecil yang berdedikasi untuk menghadirkan salad buah segar, sehat, dan berkualitas tinggi untuk Anda setiap hari.</p>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 text-center">
+          <!-- Member 1 -->
+          <div>
+            <img src="img/Dwi Nurcahyo_Data science.jpg" class="w-40 h-40 mx-auto rounded-full shadow-xl mb-4" alt="Founder" />
+            <h3 class="text-xl font-bold">Dwi</h3>
+            <p class="text-green-600 font-semibold">Founder</p>
+            <p class="text-gray-600 mt-2 text-sm">Merintis Salad Buah Fresh dengan visi hidup sehat untuk semua.</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div>
+            <img src="img/Dwi Nurcahyo_Data science.jpg" class="w-40 h-40 mx-auto rounded-full shadow-xl mb-4" alt="Produksi" />
+            <h3 class="text-xl font-bold">Nur</h3>
+            <p class="text-green-600 font-semibold">Head of Production</p>
+            <p class="text-gray-600 mt-2 text-sm">Memastikan kualitas dan kebersihan setiap produk.</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div>
+            <img src="img/Dwi Nurcahyo_Data science.jpg" class="w-40 h-40 mx-auto rounded-full shadow-xl mb-4" alt="Marketing" />
+            <h3 class="text-xl font-bold">Cahyo</h3>
+            <p class="text-green-600 font-semibold">Marketing & Customer Care</p>
+            <p class="text-gray-600 mt-2 text-sm">Melayani pelanggan dan mengelola komunikasi brand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-green-600 text-white text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Mari Hidup Lebih Sehat Bersama Kami</h2>
+      <p class="mb-8 text-green-100">Temukan salad buah favorit Anda dan rasakan kesegarannya.</p>
+      <a href="product.html" class="inline-block bg-white text-green-600 px-10 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">Lihat Produk</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-700 text-white text-center py-4">
+      <p>&copy; 2025 Salad Buah Fresh</p>
+    </footer>
+  </body>
+</html>

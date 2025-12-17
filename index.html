@@ -1,0 +1,216 @@
+<!-- =====================
+FILE: Frontend.html (HALAMAN HOME BARU)
+Tailwind CSS CDN
+===================== -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salad Buah Fresh</title>
+
+    <link rel="icon" href="img/icon-removebg-preview.png" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-green-600 text-white z-50">
+      <div class="max-w-7xl mx-auto flex justify-center items-center h-14">
+        <ul class="flex space-x-8 font-semibold" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="temukan.html">Temukan Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-24 bg-gradient-to-br from-green-50 via-green-100 to-green-200">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Salad Buah Segar,<br />Sehat & Lezat</h1>
+          <p class="text-gray-700 mb-6">Pilihan camilan sehat dari buah segar pilihan, dibuat higienis setiap hari untuk menemani aktivitas Anda.</p>
+          <div class="flex gap-4">
+            <a href="product.html" class="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition">Lihat Produk</a>
+            <a href="contact.html" class="border border-green-600 text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-green-50 transition">Hubungi Kami</a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <video class="rounded-2xl shadow-2xl" autoplay muted loop>
+            <source src="img/vidHome.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+          <div class="bg-gray-50 p-8 rounded-2xl shadow">
+            <div class="text-4xl mb-3">🍓</div>
+            <h3 class="font-bold text-xl mb-2">Buah Segar</h3>
+            <p class="text-gray-600">Dipilih langsung dari supplier terpercaya.</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-2xl shadow">
+            <div class="text-4xl mb-3">🧼</div>
+            <h3 class="font-bold text-xl mb-2">Higienis</h3>
+            <p class="text-gray-600">Diproses bersih dan fresh setiap hari.</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-2xl shadow">
+            <div class="text-4xl mb-3">🚚</div>
+            <h3 class="font-bold text-xl mb-2">Siap Antar</h3>
+            <p class="text-gray-600">Mudah dipesan dan cepat sampai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI SLIDER -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Apa Kata Mereka?</h2>
+        <p class="text-gray-600 mb-10">Ulasan pelanggan yang sudah mencoba salad buah kami</p>
+
+        <!-- Slider -->
+        <div class="relative overflow-hidden">
+          <div id="testimonialTrack" class="flex transition-transform duration-500">
+            <!-- Slide 1 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-2xl shadow-xl max-w-xl mx-auto">
+                <p class="text-gray-600 mb-4">“Salad buahnya segar banget, rasanya pas dan nggak bikin eneg. Langganan!”</p>
+                <div class="flex items-center justify-center gap-4">
+                  <img src="https://i.pravatar.cc/80?img=12" class="w-12 h-12 rounded-full" />
+                  <div class="text-left">
+                    <p class="font-semibold">Aisyah</p>
+                    <p class="text-sm text-gray-500">Mahasiswi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-2xl shadow-xl max-w-xl mx-auto">
+                <p class="text-gray-600 mb-4">“Praktis buat bekal kerja. Rasanya konsisten dan selalu fresh.”</p>
+                <div class="flex items-center justify-center gap-4">
+                  <img src="https://i.pravatar.cc/80?img=32" class="w-12 h-12 rounded-full" />
+                  <div class="text-left">
+                    <p class="font-semibold">Rizky</p>
+                    <p class="text-sm text-gray-500">Karyawan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-2xl shadow-xl max-w-xl mx-auto">
+                <p class="text-gray-600 mb-4">“Anak-anak suka banget. Sehat dan nggak ribet.”</p>
+                <div class="flex items-center justify-center gap-4">
+                  <img src="https://i.pravatar.cc/80?img=45" class="w-12 h-12 rounded-full" />
+                  <div class="text-left">
+                    <p class="font-semibold">Ibu Lina</p>
+                    <p class="text-sm text-gray-500">Ibu Rumah Tangga</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button onclick="prevTesti()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full">◀</button>
+          <button onclick="nextTesti()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full">▶</button>
+        </div>
+
+        <!-- Add Review Button -->
+        <div class="mt-10">
+          <button onclick="openReview()" class="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition">+ Tambah Review</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL REVIEW -->
+    <div id="reviewModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+      <div class="bg-white rounded-2xl max-w-md w-full p-6 relative">
+        <button onclick="closeReview()" class="absolute top-3 right-3 text-gray-400">✕</button>
+        <h3 class="text-xl font-bold mb-4">Tambah Review</h3>
+        <form onsubmit="submitReview(); return false;" class="space-y-4">
+          <input id="reviewName" type="text" placeholder="Nama" required class="w-full px-4 py-2 border rounded-xl" />
+          <input id="reviewJob" type="text" placeholder="Profesi" required class="w-full px-4 py-2 border rounded-xl" />
+          <textarea id="reviewText" placeholder="Tulis review" required class="w-full px-4 py-2 border rounded-xl"></textarea>
+          <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">Kirim Review</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-600 text-white text-center">
+      <h2 class="text-3xl font-bold mb-4">Mulai Hidup Sehat Hari Ini</h2>
+      <p class="mb-6">Pesan salad buah favoritmu sekarang juga.</p>
+      <a href="product.html" class="inline-block bg-white text-green-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition">Pesan Sekarang</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-700 text-white text-center py-4">
+      <p>&copy; 2025 Salad Buah Fresh</p>
+    </footer>
+
+    <!-- TESTIMONI SLIDER SCRIPT -->
+    <script>
+      let indexTesti = 0;
+      const track = document.getElementById("testimonialTrack");
+      const totalTesti = track.children.length;
+
+      function updateSlider() {
+        track.style.transform = `translateX(-${indexTesti * 100}%)`;
+      }
+      function nextTesti() {
+        indexTesti = (indexTesti + 1) % totalTesti;
+        updateSlider();
+      }
+      function prevTesti() {
+        indexTesti = (indexTesti - 1 + totalTesti) % totalTesti;
+        updateSlider();
+      }
+      setInterval(nextTesti, 5000);
+    </script>
+
+    <!-- REVIEW SCRIPT -->
+    <script>
+      function openReview() {
+        document.getElementById("reviewModal").classList.remove("hidden");
+        document.getElementById("reviewModal").classList.add("flex");
+      }
+      function closeReview() {
+        document.getElementById("reviewModal").classList.add("hidden");
+      }
+      function submitReview() {
+        alert("Terima kasih! Review Anda berhasil dikirim.");
+        closeReview();
+      }
+    </script>
+
+    <!-- NAVBAR ACTIVE -->
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      document.querySelectorAll("#navbar-menu a").forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("text-green-200");
+        }
+      });
+    </script>
+  </body>
+</html>
